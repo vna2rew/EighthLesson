@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f9822c449423a039b28832e9cf27a8ea {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f9822c449423a039b28832e9cf27a8ea" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f9822c449423a039b28832e9cf27a8ea = L.map(
+                "map_f9822c449423a039b28832e9cf27a8ea",
+                {
+                    center: [55.7522, 37.6156],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f1f1b84a211bce034c7d5bfe75ee20dc = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_f1f1b84a211bce034c7d5bfe75ee20dc.addTo(map_f9822c449423a039b28832e9cf27a8ea);
+        
+    
+            var marker_8c245d0f79954c4329e7d9678b06b988 = L.marker(
+                [55.7424755277373, 37.6247796045357],
+                {}
+            ).addTo(map_f9822c449423a039b28832e9cf27a8ea);
+        
+    
+            var icon_67344caa03c84f994ebd7b5faccef11a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_8c245d0f79954c4329e7d9678b06b988.setIcon(icon_67344caa03c84f994ebd7b5faccef11a);
+        
+    
+        var popup_ab21de9fd164a974adf7eba4671369b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19df3d7f8bf51d3ebbe6d29c7de92731 = $(`<div id="html_19df3d7f8bf51d3ebbe6d29c7de92731" style="width: 100.0%; height: 100.0%;">Кофе Он</div>`)[0];
+                popup_ab21de9fd164a974adf7eba4671369b5.setContent(html_19df3d7f8bf51d3ebbe6d29c7de92731);
+            
+        
+
+        marker_8c245d0f79954c4329e7d9678b06b988.bindPopup(popup_ab21de9fd164a974adf7eba4671369b5)
+        ;
+
+        
+    
+    
+            marker_8c245d0f79954c4329e7d9678b06b988.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5f520346c693ab507b65a34a551f5626 = L.marker(
+                [55.741267, 37.62563],
+                {}
+            ).addTo(map_f9822c449423a039b28832e9cf27a8ea);
+        
+    
+            var icon_4a0cffe6ed22ad55cdbfa2fc6ff12ed6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5f520346c693ab507b65a34a551f5626.setIcon(icon_4a0cffe6ed22ad55cdbfa2fc6ff12ed6);
+        
+    
+        var popup_5109d02f427a45ee0b2a872d3d4f6ec1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa367cfc37bed10393aa6c65f2cac68c = $(`<div id="html_fa367cfc37bed10393aa6c65f2cac68c" style="width: 100.0%; height: 100.0%;">Моё местоположение</div>`)[0];
+                popup_5109d02f427a45ee0b2a872d3d4f6ec1.setContent(html_fa367cfc37bed10393aa6c65f2cac68c);
+            
+        
+
+        marker_5f520346c693ab507b65a34a551f5626.bindPopup(popup_5109d02f427a45ee0b2a872d3d4f6ec1)
+        ;
+
+        
+    
+    
+            marker_5f520346c693ab507b65a34a551f5626.bindTooltip(
+                `<div>
+                     Я
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6606b6537b936ff16ce63fc16be2489c = L.marker(
+                [55.7405846195488, 37.6231683435549],
+                {}
+            ).addTo(map_f9822c449423a039b28832e9cf27a8ea);
+        
+    
+            var icon_b9cbc4e1a2427eb873ec815e207faa5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_6606b6537b936ff16ce63fc16be2489c.setIcon(icon_b9cbc4e1a2427eb873ec815e207faa5e);
+        
+    
+        var popup_f27aaf5d3b3d0e79f9546a3a45961b91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_16a342545475f9ef35f13f2b397aa54b = $(`<div id="html_16a342545475f9ef35f13f2b397aa54b" style="width: 100.0%; height: 100.0%;">Кофе Хауз</div>`)[0];
+                popup_f27aaf5d3b3d0e79f9546a3a45961b91.setContent(html_16a342545475f9ef35f13f2b397aa54b);
+            
+        
+
+        marker_6606b6537b936ff16ce63fc16be2489c.bindPopup(popup_f27aaf5d3b3d0e79f9546a3a45961b91)
+        ;
+
+        
+    
+    
+            marker_6606b6537b936ff16ce63fc16be2489c.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_297a5efee821a6232cdc916d4363952e = L.marker(
+                [55.741267, 37.62563],
+                {}
+            ).addTo(map_f9822c449423a039b28832e9cf27a8ea);
+        
+    
+            var icon_5980816f0bbd5ac12cbcbf6294b9087f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_297a5efee821a6232cdc916d4363952e.setIcon(icon_5980816f0bbd5ac12cbcbf6294b9087f);
+        
+    
+        var popup_4bda44529b21c80f99b1fe8642afbfd8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_127ca9300638da29f57b6251b4b21a76 = $(`<div id="html_127ca9300638da29f57b6251b4b21a76" style="width: 100.0%; height: 100.0%;">Моё местоположение</div>`)[0];
+                popup_4bda44529b21c80f99b1fe8642afbfd8.setContent(html_127ca9300638da29f57b6251b4b21a76);
+            
+        
+
+        marker_297a5efee821a6232cdc916d4363952e.bindPopup(popup_4bda44529b21c80f99b1fe8642afbfd8)
+        ;
+
+        
+    
+    
+            marker_297a5efee821a6232cdc916d4363952e.bindTooltip(
+                `<div>
+                     Я
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5542e885712dbc8f2216c09d2daa629b = L.marker(
+                [55.741521, 37.62881],
+                {}
+            ).addTo(map_f9822c449423a039b28832e9cf27a8ea);
+        
+    
+            var icon_8a4ad1667ffe79c0a71cc9310480329b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_5542e885712dbc8f2216c09d2daa629b.setIcon(icon_8a4ad1667ffe79c0a71cc9310480329b);
+        
+    
+        var popup_54cba597d5144a853478615eb6c011ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9701e38bc971deae7fd9b462256ca7d8 = $(`<div id="html_9701e38bc971deae7fd9b462256ca7d8" style="width: 100.0%; height: 100.0%;">Bar BQ Cafe</div>`)[0];
+                popup_54cba597d5144a853478615eb6c011ca.setContent(html_9701e38bc971deae7fd9b462256ca7d8);
+            
+        
+
+        marker_5542e885712dbc8f2216c09d2daa629b.bindPopup(popup_54cba597d5144a853478615eb6c011ca)
+        ;
+
+        
+    
+    
+            marker_5542e885712dbc8f2216c09d2daa629b.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f899a17eb32dd6a25e78f5cd7157d05f = L.marker(
+                [55.741267, 37.62563],
+                {}
+            ).addTo(map_f9822c449423a039b28832e9cf27a8ea);
+        
+    
+            var icon_266dbeb39b50d206bcae55cd33566c18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f899a17eb32dd6a25e78f5cd7157d05f.setIcon(icon_266dbeb39b50d206bcae55cd33566c18);
+        
+    
+        var popup_5a0f5ebe2914986cf0b17a251f922b71 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_850bf69470ed2297c08760a238866b44 = $(`<div id="html_850bf69470ed2297c08760a238866b44" style="width: 100.0%; height: 100.0%;">Моё местоположение</div>`)[0];
+                popup_5a0f5ebe2914986cf0b17a251f922b71.setContent(html_850bf69470ed2297c08760a238866b44);
+            
+        
+
+        marker_f899a17eb32dd6a25e78f5cd7157d05f.bindPopup(popup_5a0f5ebe2914986cf0b17a251f922b71)
+        ;
+
+        
+    
+    
+            marker_f899a17eb32dd6a25e78f5cd7157d05f.bindTooltip(
+                `<div>
+                     Я
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d092b7d8c8f44e93e105bd94ffc690f7 = L.marker(
+                [55.7409863564171, 37.6224192606046],
+                {}
+            ).addTo(map_f9822c449423a039b28832e9cf27a8ea);
+        
+    
+            var icon_1fc312d27328859bfc36455fda299642 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_d092b7d8c8f44e93e105bd94ffc690f7.setIcon(icon_1fc312d27328859bfc36455fda299642);
+        
+    
+        var popup_d676e7e8691afde18cc4cc19b042a566 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_349b0e36ce4e17b73d275acfe7d402e3 = $(`<div id="html_349b0e36ce4e17b73d275acfe7d402e3" style="width: 100.0%; height: 100.0%;">Кофешоп Coffeeshop Company</div>`)[0];
+                popup_d676e7e8691afde18cc4cc19b042a566.setContent(html_349b0e36ce4e17b73d275acfe7d402e3);
+            
+        
+
+        marker_d092b7d8c8f44e93e105bd94ffc690f7.bindPopup(popup_d676e7e8691afde18cc4cc19b042a566)
+        ;
+
+        
+    
+    
+            marker_d092b7d8c8f44e93e105bd94ffc690f7.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9b095451bd402ff396ec82d7228385a9 = L.marker(
+                [55.741267, 37.62563],
+                {}
+            ).addTo(map_f9822c449423a039b28832e9cf27a8ea);
+        
+    
+            var icon_c9fab0f594508cdbdf6f78bc7f3e3186 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9b095451bd402ff396ec82d7228385a9.setIcon(icon_c9fab0f594508cdbdf6f78bc7f3e3186);
+        
+    
+        var popup_62fa6052f1861c2d609d3e5f4119e196 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19f88edfb5c38a35a216fda14972575b = $(`<div id="html_19f88edfb5c38a35a216fda14972575b" style="width: 100.0%; height: 100.0%;">Моё местоположение</div>`)[0];
+                popup_62fa6052f1861c2d609d3e5f4119e196.setContent(html_19f88edfb5c38a35a216fda14972575b);
+            
+        
+
+        marker_9b095451bd402ff396ec82d7228385a9.bindPopup(popup_62fa6052f1861c2d609d3e5f4119e196)
+        ;
+
+        
+    
+    
+            marker_9b095451bd402ff396ec82d7228385a9.bindTooltip(
+                `<div>
+                     Я
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dd5ffc79e4ef261d9612dd44c67fd3fb = L.marker(
+                [55.7409863564171, 37.6224192606046],
+                {}
+            ).addTo(map_f9822c449423a039b28832e9cf27a8ea);
+        
+    
+            var icon_298a09c2c789adc30b1a5aedc67169f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_dd5ffc79e4ef261d9612dd44c67fd3fb.setIcon(icon_298a09c2c789adc30b1a5aedc67169f3);
+        
+    
+        var popup_dd34b69fd71e97c172f551340440dd98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b9f369602be8ebca4f54c177b21d21d = $(`<div id="html_3b9f369602be8ebca4f54c177b21d21d" style="width: 100.0%; height: 100.0%;">Кофешоп Coffeeshop Company</div>`)[0];
+                popup_dd34b69fd71e97c172f551340440dd98.setContent(html_3b9f369602be8ebca4f54c177b21d21d);
+            
+        
+
+        marker_dd5ffc79e4ef261d9612dd44c67fd3fb.bindPopup(popup_dd34b69fd71e97c172f551340440dd98)
+        ;
+
+        
+    
+    
+            marker_dd5ffc79e4ef261d9612dd44c67fd3fb.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dec5029495e873adbac461692fb14c51 = L.marker(
+                [55.741267, 37.62563],
+                {}
+            ).addTo(map_f9822c449423a039b28832e9cf27a8ea);
+        
+    
+            var icon_d18aad6e123fa0d24c9e15c769837786 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_dec5029495e873adbac461692fb14c51.setIcon(icon_d18aad6e123fa0d24c9e15c769837786);
+        
+    
+        var popup_3efcc19af04a743590e7535fdb8aab25 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c42c5d548929b356c56933b85f6deb24 = $(`<div id="html_c42c5d548929b356c56933b85f6deb24" style="width: 100.0%; height: 100.0%;">Моё местоположение</div>`)[0];
+                popup_3efcc19af04a743590e7535fdb8aab25.setContent(html_c42c5d548929b356c56933b85f6deb24);
+            
+        
+
+        marker_dec5029495e873adbac461692fb14c51.bindPopup(popup_3efcc19af04a743590e7535fdb8aab25)
+        ;
+
+        
+    
+    
+            marker_dec5029495e873adbac461692fb14c51.bindTooltip(
+                `<div>
+                     Я
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
