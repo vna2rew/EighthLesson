@@ -24,6 +24,7 @@ def fetch_coordinates(apikey, address):
     lon, lat = most_relevant['GeoObject']['Point']['pos'].split(" ")
     return lon, lat
 
+
 def load_data():
     with open('coffee.json', 'r', encoding='CP1251') as my_file:
         coffee_json = my_file.read()
