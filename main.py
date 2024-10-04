@@ -6,8 +6,6 @@ from dotenv import load_dotenv
 from flask import Flask
 from geopy.distance import lonlat, distance
 
-app = Flask(__name__)
-
 
 def fetch_coordinates(apikey, address):
     base_url = "https://geocode-maps.yandex.ru/1.x"
@@ -90,6 +88,7 @@ if __name__ == '__main__':
     user_coords = fetch_coordinates(apikey, user_geo)
 
     create_map(calc_distance(coffee_map_info))
-
+    
+    app = Flask(__name__)
     app.add_url_rule('/', 'hello', hello_world)
     app.run('0.0.0.0')
